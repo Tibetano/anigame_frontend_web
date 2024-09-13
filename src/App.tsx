@@ -20,6 +20,7 @@ function App() {
 
             <Routes>
               <Route path='/' element={<Home />}/>
+              <Route path='/anigame_frontend_web' element={<Home />}/>
 
               <Route path='/ingresso' element={<Ticket />}/>
               <Route path='/programacao' element={<Schedule />}/>
