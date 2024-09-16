@@ -1,15 +1,17 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 type Btype={
-    name:string
+    name:string,
+    path:string
 }
 
-const TextButton = ({name}:Btype) => {
+const TextButton = ({name,path}:Btype) => {
 
     const [isHovered,setIsHovered] = useState<Boolean>(false);
 
     return (
-        <a href="" style={{
+        <Link to={path} style={{
             fontSize: '1.125rem',
             lineHeight:'1.75rem',
             color: isHovered ? "rgb(51 65 85)" : "",
@@ -22,7 +24,7 @@ const TextButton = ({name}:Btype) => {
             transitionDuration: '500ms'
         }}
         onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}>{name}</a>
+        onMouseLeave={() => setIsHovered(false)}>{name}</Link>
     )
 }
 

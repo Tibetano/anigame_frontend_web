@@ -35,7 +35,7 @@ const Header = () => {
                                     <Link to="/galeria">Galeria</Link>
                                 </li>
                                 <li className="transition duration-500 hover:text-slate-500 px-3 py-2">
-                                    <Link to="/loja">Loja</Link>
+                                    <Link to="/produtos">Produtos</Link>
                                 </li>
                                 <li className="transition duration-500 hover:text-slate-500 px-3 py-2">
                                     <Link to="/sobre">Sobre o evento</Link>

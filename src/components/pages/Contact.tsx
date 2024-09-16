@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
     return (
-        <div className="flex flex-col items-center bg-red-800">
+        <div className="flex flex-col items-center p-5 bg-slate-200">
             <h1>Página de contatos</h1>
-            <p>Está página está em construção.</p>
-            <strong>
-            <Link to="/">&gt;&gt;&gt;Voltar para o início.&lt;&lt;&lt;</Link>
+            <p className="text-red-600 font-extrabold pt-1">Página está em construção.</p>
+            <p>suporte@anigame.com</p>
+            <strong className="bg-lime-400 p-1 mt-5 rounded font-semibold hover:text-cyan-400 hover:bg-slate-700">
+            <Link to="/">Voltar para o início</Link>
             </strong>
         </div>
     );

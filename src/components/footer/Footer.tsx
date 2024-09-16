@@ -8,9 +8,9 @@ const Footer = () => {
             <div className="flex justify-between bg-white px-56">
                 <div className="flex flex-col pl-56 py-16">
                     <strong className="text-xl pb-5 text-slate-800">Anigame</strong>
-                    <TextButton name="Início"/>
-                    <TextButton name="Nosso time"/>
-                    <TextButton name="Contate-nos"/>
+                    <TextButton name="Início" path="/"/>
+                    <TextButton name="Nosso time" path="/nossotime"/>
+                    <TextButton name="Contate-nos" path="/contato"/>
                 </div>
                 <div className="flex flex-col py-16">
                     <strong className="text-xl pb-5 text-slate-800">Siga-nos</strong>
