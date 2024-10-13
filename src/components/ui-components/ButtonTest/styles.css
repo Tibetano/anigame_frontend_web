@@ -1,0 +1,33 @@
+.stylized-button {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .stylized-button:hover {
+    background-color: #45a049;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    opacity: 0;
+    transform: translateX(0px); /* Inicialmente na posição padrão */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição suave */
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon.hovered {
+    opacity: 1;
+    transform: translateX(10px); /* Desloca para a direita ao passar o mouse */
+  }
+  
