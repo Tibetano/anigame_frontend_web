@@ -1,4 +1,4 @@
-import {useState,useRef} from 'react'
+import {/*useState,*/useRef} from 'react'
 //sponsor deve ter um grau, que pode ser gold, silver ou bronze para que ele possa ser estilizado de acordo com esse grau.
 
 import { GiQueenCrown } from "react-icons/gi";
@@ -76,25 +76,25 @@ type SponsorType = {
     image?:string,
     role?:string
 };
-
+/*
 type ImageDimensions={
     w:number,
     h:number
 };
-
-const Sponsor = ({ image, name, role }:SponsorType) => {
+*/
+const Sponsor = ({ /*image,*/ name, role }:SponsorType) => {
     
-    const [dimensions,setDimensions] = useState<ImageDimensions>({w:146,h:154});
+    //const [dimensions,setDimensions] = useState<ImageDimensions>({w:146,h:154});
     const imgRef = useRef<HTMLImageElement>(null);
 
-    const handleImageLoad = () => {
+    /*const handleImageLoad = () => {
         if (imgRef.current) {
             setDimensions({
             w: imgRef.current.naturalWidth,
             h: imgRef.current.naturalHeight
           });
         }
-      };
+      };*/
 
     return (
 
@@ -103,7 +103,7 @@ const Sponsor = ({ image, name, role }:SponsorType) => {
             <div className='sponsor-container'>
 
                 <div className='sponsorLogo'>
-                    <img src={SponsorImg} alt={name} onLoad={handleImageLoad} ref={imgRef}/>
+                    <img src={SponsorImg} alt={name} onLoad={()=>{}/*handleImageLoad*/} ref={imgRef}/>
                 </div>
 
                 <div className='sponsorRole'>
