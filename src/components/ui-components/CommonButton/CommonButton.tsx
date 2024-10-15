@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { BsChevronCompactRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const StyledButton = styled.button`
   position: relative;
@@ -42,17 +43,21 @@ const StyledButton = styled.button`
 type ButtonType = {
   name: string;
   css?: string;
+  path: string;
 };
 
-const CommonButton: React.FC<ButtonType> = ({ name, css }) => {
+const CommonButton: React.FC<ButtonType> = ({ name, css, path }) => {
   const buttonClass = `${css}`;
 
   return (
     <div>
-      <StyledButton className={buttonClass}>
-        {name}
-        <BsChevronCompactRight  /> {/* Inserindo o ícone do react-icons */}
-      </StyledButton>
+      <Link to={path}>
+        <StyledButton className={buttonClass}>
+          {name}
+          <BsChevronCompactRight  /> {/* Inserindo o ícone do react-icons */}
+        </StyledButton>
+      </Link>
+      
     </div>
   );
 };

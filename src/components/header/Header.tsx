@@ -20,9 +20,9 @@ const Header = () => {
                     <div className="sign-in-up">
                         <BsPersonCircle size={25}/>
                         <span>
-                            <Link to="/" className="sign-in">ENTRE</Link>
+                            <Link to="/account/entrar" className="sign-in">ENTRE</Link>
                             ou
-                            <Link to="/" className="sign-up">CADASTRE-SE</Link>
+                            <Link to="/account/registrar" className="sign-up">CADASTRE-SE</Link>
                         </span>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="btm">
-                        <CommonButton name="DONATE" css="bg-black text-white hover:bg-lime-400 px-8 py-3 font-lato font-bold text-base"/>
+                        <CommonButton path="/" name="DONATE" css="bg-black text-white hover:bg-lime-400 px-8 py-3 font-lato font-bold text-base"/>
                     </div>
                 </div>
             </Menu>

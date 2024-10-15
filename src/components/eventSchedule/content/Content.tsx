@@ -7,10 +7,11 @@ type params = {
     type: number,
     title:string,
     buttonLabel:string,
-    text:string
+    text:string,
+    path:string
 }
 
-const Content = ({title,buttonLabel,text,type}:params) => {
+const Content = ({title,buttonLabel,text,type,path}:params) => {
     return (
         <Container className={type===0?"bg-white":"bg-black"}>
             {type===0 && (
@@ -25,7 +26,7 @@ const Content = ({title,buttonLabel,text,type}:params) => {
                             {text}   
                         </p>
                         <div className="left_button">
-                            <CommonButton name={buttonLabel} css='bg-black font-lato font-bold text-xs text-white hover:bg-lime-400 border-2 border-black px-8 py-3 mt-10 mb-20'/>
+                            <CommonButton path={path} name={buttonLabel} css='bg-black font-lato font-bold text-xs text-white hover:bg-lime-400 border-2 border-black px-8 py-3 mt-10 mb-20'/>
                         </div>
                     </div>
                 </>
@@ -39,7 +40,7 @@ const Content = ({title,buttonLabel,text,type}:params) => {
                                 {text}   
                             </p>
                             <div className="right_button">
-                                <CommonButton name={buttonLabel} css='bg-lime-400 text-white hover:bg-black px-8 py-3 mt-10 mb-20 font-lato font-bold text-xs transition duration-500'/>
+                                <CommonButton path={path} name={buttonLabel} css='bg-lime-400 text-white hover:bg-black px-8 py-3 mt-10 mb-20 font-lato font-bold text-xs transition duration-500'/>
                             </div>
                     </div>
 

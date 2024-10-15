@@ -14,6 +14,11 @@ import About from './components/pages/About';
 import ErrorPage from './components/pages/ErrorPage';
 import Product from './components/pages/Product.tsx';
 import OurTeam from './components/pages/OurTeam.tsx';
+import Attractions from './components/pages/Attractions.tsx';
+import SignUp from './components/pages/SignUp.tsx';
+import SignIn from './components/pages/SignIn.tsx';
+import Contests from './components/pages/Contests.tsx';
+import GeekFair from './components/pages/GeekFair.tsx';
 
 const router = createBrowserRouter([
   {
@@ -30,7 +35,12 @@ const router = createBrowserRouter([
       {path:"/sobre", element:<About />},
       {path:"/contato", element:<Contact />},
       {path:"/produto/:id", element:<Product/>},
-      {path:"/nossotime", element:<OurTeam/>}
+      {path:"/nossotime", element:<OurTeam/>},
+      {path:"/atracao", element:<Attractions />},
+      {path:"/account/registrar", element:<SignUp />},
+      {path:"/account/entrar", element:<SignIn />},
+      {path:"/concursos", element:<Contests/>},
+      {path:"/feira-geek", element:<GeekFair/>}
     ]
   },
 ]);
