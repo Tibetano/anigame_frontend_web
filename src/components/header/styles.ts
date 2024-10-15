@@ -1,12 +1,13 @@
 import styled from "styled-components"
 import breakpoints from "../../styles/breakpoints";
 
-export const SocialMedia = styled.div`
+export const StyledHeader = styled.div`
     display: flex;
+    align-items: center;
     justify-content: center;
     background-color: black;
 
-    .icons {
+    .elements {
             display: flex;
             justify-content: flex-end;
             width: 80%;
@@ -21,17 +22,42 @@ export const SocialMedia = styled.div`
             }
     }
 
-    .firstIcon {
-        padding: 14px 0px 14px 16px;
+    .sign-in-up{
+        display: flex;
+        align-items: center;
+        font-family: 'lato', sans-serif;
+        padding: 14px 0px 14px 10px;
+        color: white;
+
+        span{
+            width: 190px;
+            display: flex;
+            justify-content: space-around;
+            padding: 0px 0px 0px 5px;
+        }
+
+        .sign-in{
+            font-weight: bold;
+        }
+
+        .sign-up{
+            font-weight: bold;
+        }
+
+        .sign-in:hover{
+            color: rgb(163 230 53);
+        }
+
+        .sign-up:hover{
+            color: rgb(163 230 53);
+        }
     }
 
     .icon {
-        padding: 14px 10px;
+        padding: 18px 10px;
     }
 
-    .lastIcon {
-        padding: 14px 0px 14px 10px;
-    }
+    
 `;
 
 export const Menu = styled.div`

@@ -1,25 +1,32 @@
 import { Link } from "react-router-dom";
-import { BsInstagram, BsTwitterX } from "react-icons/bs";
+import { BsInstagram, BsTwitterX, BsPersonCircle } from "react-icons/bs";
 import { ImFacebook, ImLinkedin2 } from "react-icons/im";
 import CommonButton from "../ui-components/CommonButton/CommonButton";
 import Logo from "../../assets/Logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-
-
-import  { SocialMedia, Menu }  from "./styles";
+import  { StyledHeader, Menu }  from "./styles";
 
 const Header = () => {
     return (
         <header>
-            <SocialMedia>
-                <div className="icons">
-                    <a href="" className="firstIcon" title="Siga nos no Facebook"><ImFacebook color="white" aria-label="Siga nos no Facebook" /></a>
+            <StyledHeader>
+                <div className="elements">
+                    <a href="" className="icon" title="Siga nos no Facebook"><ImFacebook color="white" aria-label="Siga nos no Facebook" /></a>
                     <a href="" className="icon" title="Siga nos no Instagram"><BsInstagram color="white" aria-label="Siga nos no Instagram"/></a>
                     <a href="" className="icon" title="Siga nos no LinkedIn"><ImLinkedin2 color="white" aria-label="Siga nos no LinkedIn"/></a>
-                    <a href="" className="lastIcon" title="Siga nos no Twitter"><BsTwitterX color="white" aria-label="Siga nos no X"/></a>
+                    <a href="" className="icon" title="Siga nos no Twitter"><BsTwitterX color="white" aria-label="Siga nos no X"/></a>
+
+                    <div className="sign-in-up">
+                        <BsPersonCircle size={25}/>
+                        <span>
+                            <Link to="/" className="sign-in">ENTRE</Link>
+                            ou
+                            <Link to="/" className="sign-up">CADASTRE-SE</Link>
+                        </span>
+                    </div>
                 </div>
-            </SocialMedia>
+            </StyledHeader>
             
             <Menu>
                 <div className="content">
@@ -45,13 +52,8 @@ const Header = () => {
                     <div className="btm">
                         <CommonButton name="DONATE" css="bg-black text-white hover:bg-lime-400 px-8 py-3 font-lato font-bold text-base"/>
                     </div>
-
-                    
-
-
                 </div>
             </Menu>
-            
         </header>
     );
 };
