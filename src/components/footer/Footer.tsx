@@ -12,7 +12,7 @@ const Footer = () => {
 
                     <div className="event">
                         <strong className="text-xl pb-5 text-slate-800">Anigame</strong>
-                        <TextButton name="Início" path="/"/>
+                        <TextButton name="Início" path="https://tibetano.github.io/anigame_frontend_web/"/>
                         <TextButton name="Nosso time" path="/nossotime"/>
                         <TextButton name="Contate-nos" path="/contato"/>
                     </div>
@@ -26,10 +26,11 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="Logo">
-                        <img src={Logo} className="logoImg" alt="Logo do evento" title="Logo do evento" />
+                        <a href="https://tibetano.github.io/anigame_frontend_web/">
+                            <img src={Logo} className="logoImg" alt="Logo do evento" title="Logo do evento" />
+                        </a>
                         <p>Janaúba - Minas Gerais</p>
                     </div>
-
                 </div>
             </Container>
             <CopyRight>

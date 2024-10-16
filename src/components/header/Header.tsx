@@ -31,7 +31,9 @@ const Header = () => {
             <Menu>
                 <div className="content">
                     <div className="Logo">
+                        <a href="https://tibetano.github.io/anigame_frontend_web/">
                         <img src={Logo} className="logoImg" alt="Logo do evento" title="Logo do evento" />
+                        </a>
                     </div>
                     <nav className="NavBar">
                         <ul className="UList">
